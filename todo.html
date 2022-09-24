@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block head %}
+    <style>
+
+    </style>
+{% endblock %}
+{% block content %}
+  <h1>{{ text }}</h1>
+
+  {% if completed %}
+    <p> You have completed all your todos! 🚀 </p>
+  {% else %}
+    <p>You have not completed this yet. Why not do it now?</p>
+  {% endif %}
+
+{% endblock %}
